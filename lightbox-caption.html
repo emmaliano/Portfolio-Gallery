@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/glightbox.min.css" />
     <title>Grid Gallery</title>
   </head>
   <body>
@@ -21,18 +22,21 @@
       </nav>
     </header>
     <main class="gallery-page">
-      <h1>Auto Fit Gallery</h1>
-      <section class="gallery-auto-fit">
-        <div class="gallery-item">
-          <a href="img-1.jpg"
+      <h1>Lightbox Caption Gallery</h1>
+      <section class="gallery-span">
+        <div class="gallery-item w-3">
+          <a
+            href="img-1.jpg"
+            class="glightbox"
+            data-glightbox="title: Menu; description: Victorian Menu from the New York Public Library"
             ><img
               src="img/img-1.jpg"
               alt="Menu from the New York public domain collection"
               class="gallery-img"
           /></a>
         </div>
-        <div class="gallery-item">
-          <a href="img-2.jpg"
+        <div class="gallery-item w-2 h-2">
+          <a href="img-2.jpg" class="glightbox"
             ><img
               src="img/img-2.jpg"
               alt="Menu from the New York public domain collection"
@@ -40,23 +44,23 @@
           /></a>
         </div>
         <div class="gallery-item">
-          <a href="img-3.jpg"
+          <a href="img-3.jpg" class="glightbox"
             ><img
               src="img/img-3.jpg"
               alt="Menu from the New York public domain collection"
               class="gallery-img"
           /></a>
         </div>
-        <div class="gallery-item">
-          <a href="img-4.jpg"
+        <div class="gallery-item h-2">
+          <a href="img-4.jpg" class="glightbox"
             ><img
               src="img/img-4.jpg"
               alt="Menu from the New York public domain collection"
               class="gallery-img"
           /></a>
         </div>
-        <div class="gallery-item">
-          <a href="img-5.jpg"
+        <div class="gallery-item w-2">
+          <a href="img-5.jpg" class="glightbox"
             ><img
               src="img/img-5.jpg"
               alt="Menu from the New York public domain collection"
@@ -64,15 +68,15 @@
           /></a>
         </div>
         <div class="gallery-item">
-          <a href="img-6.jpg"
+          <a href="img-6.jpg" class="glightbox"
             ><img
               src="img/img-6.jpg"
               alt="Menu from the New York public domain collection"
               class="gallery-img"
           /></a>
         </div>
-        <div class="gallery-item">
-          <a href="img-7.jpg"
+        <div class="gallery-item h-3">
+          <a href="img-7.jpg" class="glightbox"
             ><img
               src="img/img-7.jpg"
               alt="Menu from the New York public domain collection"
@@ -80,15 +84,15 @@
           /></a>
         </div>
         <div class="gallery-item">
-          <a href="img-8.jpg"
+          <a href="img-8.jpg" class="glightbox"
             ><img
               src="img/img-8.jpg"
               alt="Menu from the New York public domain collection"
               class="gallery-img"
           /></a>
         </div>
-        <div class="gallery-item">
-          <a href="img-9.jpg"
+        <div class="gallery-item w-2 h-3">
+          <a href="img-9.jpg" class="glightbox"
             ><img
               src="img/img-9.jpg"
               alt="Menu from the New York public domain collection"
@@ -96,15 +100,15 @@
           /></a>
         </div>
         <div class="gallery-item">
-          <a href="img-10.jpg"
+          <a href="img-10.jpg" class="glightbox"
             ><img
               src="img/img-10.jpg"
               alt="Menu from the New York public domain collection"
               class="gallery-img"
           /></a>
         </div>
-        <div class="gallery-item">
-          <a href="img-11.jpg"
+        <div class="gallery-item h-2 w-2">
+          <a href="img-11.jpg" class="glightbox"
             ><img
               src="img/img-11.jpg"
               alt="Menu from the New York public domain collection"
@@ -112,7 +116,7 @@
           /></a>
         </div>
         <div class="gallery-item">
-          <a href="img-12.jpg"
+          <a href="img-12.jpg" class="glightbox"
             ><img
               src="img/img-12.jpg"
               alt="Menu from the New York public domain collection"
@@ -121,5 +125,9 @@
         </div>
       </section>
     </main>
+    <script src="js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop: true });
+    </script>
   </body>
 </html>
